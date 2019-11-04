@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="ninodezign.com, ninodezign@gmail.com">
+	<meta name="copyright" content="ninodezign.com">
+	<title>Mogo | OnePage Responsive Theme</title>
+	
+	<!-- favicon -->
+    <link rel="shortcut icon" href="images/ico/favicon.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url_for('static', filename ='images/ico/apple-touch-icon-144-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ url_for('static', filename ='images/ico/apple-touch-icon-114-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url_for('static', filename ='images/ico/apple-touch-icon-72-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ url_for('static', filename ='images/ico/apple-touch-icon-57-precomposed.png') }}">
+	
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='css/bootstrap.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='css/materialdesignicons.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='css/jquery.mCustomScrollbar.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='css/prettyPhoto.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='css/unslider.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='css/template.css') }}" />
+	
+</head>
+
+<body data-target="#nino-navbar" data-spy="scroll">
+
+	<!-- Header
+    ================================================== -->
+	<header id="nino-header">
+		<div id="nino-headerInner">					
+			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nino-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="homepage.html">PPUCHA</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nino-menuItem pull-right">
+						<div class="collapse navbar-collapse pull-left" id="nino-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#nino-header">Home <span class="sr-only">(current)</span></a></li>
+								<li><a href="{{ url_for('static', filename ='#nino-story') }}">About</a></li>
+								<li><a href="{{ url_for('static', filename ='#nino-services') }}">Service</a></li>
+								<li><a href="{{ url_for('static', filename ='#nino-ourTeam') }}">Health</a></li>
+								<li><a href="{{ url_for('static', filename ='#nino-portfolio') }}">Legal</a></li>
+								<li><a href="{{ url_for('static', filename ='#nino-latestBlog') }}">Benefits</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+						<ul class="nino-iconsGroup nav navbar-nav">
+							<li><a href="{{ url_for('static', filename ='#') }}"><i class="mdi mdi-cart-outline nino-icon"></i></a></li>
+							<li><a href="{{ url_for('static', filename ='#') }}'" class="nino-search"><i class="mdi mdi-magnify nino-icon"></i></a></li>
+						</ul>
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			<section id="nino-slider" class="carousel slide container" data-ride="carousel">
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<h2 class="nino-sectionHeading">
+							<span class="nino-subHeading">Prenatal Public Chair</span>
+							Welcome <br>to PPUCHA
+						</h2>
+						<a href="{{ url_for('static', filename ='#') }}" class="nino-btn">Learn more</a>
+					</div>
+					<div class="item">
+						<h2 class="nino-sectionHeading">
+							<span class="nino-subHeading">Prenatal Public Chair</span>
+							Welcome <br>to PPUCHA
+						</h2>
+						<a href="{{ url_for('static', filename ='#') }}" class="nino-btn">Learn more</a>
+					</div>
+					<div class="item">
+						<h2 class="nino-sectionHeading">
+							<span class="nino-subHeading">Prenatal Public Chair</span>
+							Welcome <br>to PPUCHA
+						</h2>
+						<a href="{{ url_for('static', filename ='#') }}" class="nino-btn">Learn more</a>
+					</div>
+					<div class="item">
+						<h2 class="nino-sectionHeading">
+							<span class="nino-subHeading">Prenatal Public Chair</span>
+							Welcome <br>to PPUCHA
+						</h2>
+						<a href="{{ url_for('static', filename ='#') }}" class="nino-btn">Learn more</a>
+					</div>
+				</div>
+
+				<!-- Indicators -->
+				<ol class="carousel-indicators clearfix">
+					<li data-target="#nino-slider" data-slide-to="0" class="active">
+						<div class="inner">
+							<span class="number">01</span> intro	
+						</div>
+					</li>
+					<li data-target="#nino-slider" data-slide-to="1">
+						<div class="inner">
+							<span class="number">02</span> necessity
+						</div>
+					</li>
+					<li data-target="#nino-slider" data-slide-to="2">
+						<div class="inner">
+							<span class="number">03</span> using PPUCHA
+						</div>
+					</li>
+					<li data-target="#nino-slider" data-slide-to="3">
+						<div class="inner">
+							<span class="number">04</span> prenatal care
+						</div>
+					</li>
+				</ol>
+			</section>
+		</div>
+	</header><!--/#header-->
+
+	<!-- Story About Us
+    ================================================== -->
+	<section id="nino-story">
+		<div class="container">
+			<h2 class="nino-sectionHeading">
+				<span class="nino-subHeading">What is PPUCHA?</span>
+				Explanation of PPUCHA
+			</h2>
+			<p class="nino-sectionDesc">PPUCHA is a prental public chair service for expecting mothers. PPUCHA is a service that promotes societal improvements such as having a safer and a more voluntarily yielding environment for expecting mothers and the unborn babies. We provide this service for three parties: expecting mothers, people sitting in prenatal public chairs, and the public. For expecting mothers, we are more than willing to provide them with information regarding prenatal care in diverse fields: health, education and law. For people who are sitting in the prenatal public chairs albeit the presence of expecting mothers, we are willing to give them a second chance to look back at their own actions and have fun during the process. For the rest of the people on the subway, we hope that they have an opportunity to step into the shoes of the expecting mothers and think about how they should act around expecting mothers from that moment on.</p>
+			<div class="sectionContent">
+				<div class="row nino-hoverEffect">
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<img src="images/story/img-1.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<img src="images/story/img-2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<img src="images/story/img-3.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section><!--/#nino-story-->
+
+    <!-- What We Do
+    ================================================== -->
+    <section id="nino-whatWeDo">
+    	<div class="container">
+    		<h2 class="nino-sectionHeading">
+				<span class="nino-subHeading">Why Do We Need PPUCHA?</span>
+				Status Quo
+			</h2>
+			<p class="nino-sectionDesc">
+				Current seats for the expecting mothers are ineffective. Many expecting mothers express their fear of using prenatal public chairs for reasons such as retaliation or unnecessary attention. Seats that prove the need for expecting mothers to have a seat are needed and we believe that PPUCHA is just what expecting mothers and the public needed. Sixty percent of expecting mothers have said that they have not had been yielded a seat in public transportation and fifty-six percent of expecting mothes have said that public transportation was the biggest hardship during their pregnancy. Justifying and proving that expecting mothers are in need of just a few minutes of our standing in the subway in an amusing way was needed for two reasons. First, the public needed a constant demonstration of the logic behind the existence of prenatal public chairs to be able to yield from the heart. Second, with PPUCHA, the expecting mothers would be able to claim what they should be able to claim in a less hostile, yet impactful way. 
+			</p>
+			<div class="sectionContent">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="text-center">
+							<img src="images/what-we-do/img-1.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="text-center">
+							<img src="images/what-we-do/img-2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </section><!--/#nino-whatWeDo-->
+
+    <!-- Our Team
+    ================================================== -->
+	<section id="nino-ourTeam">
+		<div class="container">
+			<h2 class="nino-sectionHeading">
+				<span class="nino-subHeading">Using PPUCHA</span>
+				Step-by-Step Explanation
+			</h2>
+			<ol class="nino-sectionDesc">
+				<li>Open Kakaotalk</li>
+				<li>Find PPUCHA on Plus Friends</li>
+				<li>Add PPUCHA as a friend</li>
+				<li>Go into the automatically-made chatroom</li>
+				<li>Press 'register'</li>
+				<li>Press 'make my barcode'</li>
+				<li>Input your personal information: name, birth date, picture of document proving your pregnancy</li>
+				<li>PPUCHA will send you your barcode</li>
+				<li>Scan the barcode on the barcode scanner right beside the subway door</li>
+				<li>Scan the barcode again on the barcode scanner attached to the prenatal public chair before you sit down</li>
+				<li>Sit down on the prenatal public chair</li>
+				<li>Relax and scan the QR codes on the screen for information regarding prenatal care</li>
+			</ol>
+		</div>
+	</section><!--/#nino-ourTeam-->
+
+    <!-- Latest Blog
+	================================================== -->
+	<section id="nino-latestBlog">
+			<div class="container">
+				<h2 class="nino-sectionHeading">
+					<span class="nino-subHeading">Prenatal Care</span>
+					Health
+				</h2>
+				<div class="sectionContent">
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<article>
+								<div class="articleThumb">
+									<a href="{{ url_for('static', filename ='images/what-we-do/img-1.jpg') }}"><img src="images/our-blog/img-1.jpg" alt=""></a>
+								</div>
+								<h3 class="articleTitle"><a href="">Treating Minor Illness</a></h3>
+								<p class="articleDesc">
+									<dl>
+										<dt>Treating High Fever</dt>
+											<dd>-Footbath in warm water</dd>
+											<dd>-In case of cold, take off your clothes and wipe your sweat with a tower dipped in warm water</dd>
+											<dd>-Drink pear tea, ginger tea, or bean sprout soup</dd>
+									</dl>
+									<dl>
+										<dt>Treating Morning Sickness</dt>
+											<dd>-Eat small portions of food frequently</dd>
+											<dd>-Eat dry food</dd>
+											<dd>-Try not to drink water while eating</dd>
+											<dd>-Do not eat hot or spicy food</dd>
+									</dl>
+									<dl>
+										<dt>Treating Anemia</dt>
+											<dd>-Do not drink coffee or green tea</dd>
+											<dd>-Stay out of closed spaces</dd>
+											<dd>-Eat food that will help you prevent anemia such as liver, egg yolk, beans and kelp</dd>
+									</dl>
+								</p>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<article>
+								<div class="articleThumb">
+									<a href="{{ url_for('static', filename ='images/what-we-do/img-2.jpg') }}"><img src="images/our-blog/img-2.jpg" alt=""></a>
+								</div>
+								<h3 class="articleTitle"><a href="">Prenatal Depression</a></h3>
+								<p class="articleDesc">
+									<dl>
+										<dt>Cause</dt>
+											<dd>-Increase of hormones released in the body which leads to extreme changes in emotions</dd>
+									</dl>
+									<dl>
+										<dt>Symptoms</dt>
+											<dd>-Constant crying</dd>
+											<dd>-Despising own body</dd>
+											<dd>-Feel like life as a woman is over</dd>
+											<dd>-Loss in apetite or increase in appetite</dd>
+											<dd>-Insomnia</dd>
+											<dd>-Worrying about oneself and one's baby</dd>
+											<dd>-Want to erase baby</dd>
+									</dl>
+								</p>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<article>
+								<div class="articleThumb">
+									<a href="{{ url_for('static', filename ='#') }}"><img src="images/our-blog/img-3.jpg" alt=""></a>
+								</div>
+								<h3 class="articleTitle"><a href="">Anemia Candy</a></h3>
+								<p class="articleDesc">
+									<dl>
+										<dt>What is anemia candy?</dt>
+											<dd>-Candy made of natural ingredients that has less sugar, but has a higher sweet and sour taste</dd>
+									</dl>
+									<dl>
+										<dt>When should an expecting mother eat the anemia candy?</dt>
+											<dd>-The answer is "anytime," but the expecting mother should eat less than four anemia candies a day.</dd>
+									</dl>
+								</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/#nino-latestBlog-->
+	
+		<section id="nino-latestBlog">
+				<div class="container">
+					<h2 class="nino-sectionHeading">
+						<span class="nino-subHeading">Prenatal Care</span>
+						Legal
+					</h2>
+					<div class="sectionContent">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<article>
+									<div class="articleThumb">
+										<a href="{{ url_for('static', filename ='#') }}"><img src="images/our-blog/img-4.jpg" alt=""></a>
+									</div>
+									<h3 class="articleTitle"><a href="">Maternity Leave Rights</a></h3>
+									<p class="articleDesc">
+										<dl>
+											<dd>-Working mothers are legally entitled to 60 days of paid maternity leave, and 30 days of partially paid maternity leave. 45 days’ leave can be taken before and after birth.</dd>
+											<dd>-Working fathers are legally entitled to 5 days’ paternity leave.</dd>
+											<dd>-Parents with children under the age of 3 (36 months) can request full-time or part-time childcare leave for up to one year if they submit a request for leave to their employer 30 days prior to the beginning of the period.</dd>
+										</dl>
+									</p>
+								</article>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<article>
+									<div class="articleThumb">
+										<a href="{{ url_for('static', filename ='#') }}"><img src="images/our-blog/img-5.jpg" alt=""></a>
+									</div>
+									<h3 class="articleTitle"><a href="">Pregnant Women in the Workplace</a></h3>
+									<p class="articleDesc">
+										<dl>
+											<dd>-It is illegal to have pregnant women work overtime, on their days off, or during national holidays.</dd>
+											<dd>-Women who are 12 to 36 weeks pregnant have a right to request 2-hour shortened work days.</dd>
+											<dd>-Women are legally entitled to request a less stressful workload.</dd>
+										</dl>
+									</p>
+								</article>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<article>
+									<div class="articleThumb">
+										<a href="{{ url_for('static', filename ='#') }}'"><img src="images/our-blog/img-6.jpg" alt=""></a>
+									</div>
+									<h3 class="articleTitle"><a href="">Changes Made to Prenatal Welfare Policies in 2017</a></h3>
+									<p class="articleDesc">
+										<dl>
+											<dd>-Increased insurance coverage for miscarriages and premature births</dd>
+											<dd>-Expansion of hospital rooms dedicated to women who are in high risk labor</dd>
+											<dd>-Increased insurance coverage for couples with infertility issues</dd>
+											<dd>-Increased insurance coverage for checkups for high-risk pregnancies</dd>
+										</dl>
+									</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><!--/#nino-latestBlog-->
+
+			<section id="nino-latestBlog">
+					<div class="container">
+						<h2 class="nino-sectionHeading">
+							<span class="nino-subHeading">Prenatal Care</span>
+							Benefits
+						</h2>
+						<div class="sectionContent">
+							<div class="row">
+								<div class="col-md-4 col-sm-4">
+									<article>
+										<div class="articleThumb">
+											<a href="{{ url_for('static', filename ='#') }}"><img src="images/our-blog/img-7.jpg" alt=""></a>
+										</div>
+										<h3 class="articleTitle"><a href="">Pregnancy Voucher</a></h3>
+										<p class="articleDesc">
+											<dl>
+												<dt>Benefits</dt>
+													<dd>-Expecting mothers who have registered to health insurance or are qualified to receive medical fees can get 50 million won respectively with the pregnancy voucher</dd>
+													<dd>-If the expecting mothers have more than two children, then they can get an additional 20 million won.</dd>
+											</dl>
+											<dl>
+												<dt>How to Register</dt>
+													<dd>-After confirming that the expecting mother is pregnant at the hospital, she can get the registration form and fill it in.</dd>
+													<dd>-She can go to the bank, the post office, or the community center to register.</dd>
+											</dl>
+										</p>
+									</article>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<article>
+										<div class="articleThumb">
+											<a href="{{ url_for('static', filename ='#') }}"><img src="images/our-blog/img-8.jpg" alt=""></a>
+										</div>
+										<h3 class="articleTitle"><a href="">Travelling Support for Expecting Mothers</a></h3>
+										<p class="articleDesc">
+											<dl>
+												<dt>Fast Track Service</dt>
+													<dd>-Special track for expecting mothers and two of her companions to get through departure procedures faster</dd>														
+											</dl>
+											<dl>
+												<dt>Free Mom Service</dt>
+													<dd>-Can get the front seats or the aisle seats</dd>
+													<dd>-Separate resting area for expecting mothers</dd>
+											</dl>
+										</p>
+									</article>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<article>
+										<div class="articleThumb">
+											<a href="{{ url_for('static', filename ='#') }}"><img src="images/our-blog/img-9.jpg" alt=""></a>
+										</div>
+										<h3 class="articleTitle"><a href="">KTX Premium Seats</a></h3>
+										<p class="articleDesc">
+											<dl>
+												<dd>-Can get your seat upgraded with the "mom-convenient KTX product"</dd>
+												<dd>-Need to be a member of the KTX service</dd>
+												<dd>-After you use it, you need to prove that you are an expecting mother by going to a nearby station with a proof of pregnancy (identity card, diagnosis, paper confirming pregnancy).</dd>
+											</dl>
+										</p>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!--/#nino-latestBlog-->
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-4">
+        			<div class="colInfo">
+	        			<div class="footerLogo">
+	        				<a href="{{ url_for('static', filename ='#') }}" >PPUCHA</a>	
+	        			</div>
+	        			<p>
+	        				Prenatal Public Chair
+	        			</p>
+	        			<form action="" class="nino-subscribeForm">
+	        				<div class="input-group input-group-lg">
+								<input type="email" class="form-control" placeholder="Your Email" required>
+								<span class="input-group-btn">
+									<button class="btn btn-success" type="submit">Subscribe</button>
+								</span>
+							</div>
+	        			</form>
+        			</div>
+        		</div>
+			<div class="nino-copyright">Copyright &copy; 2016 <a target="_blank" href="{{ url_for('static', filename ='http://www.ninodezign.com/') }}" title="Ninodezign.com - Top quality open source resources for web developer and web designer">Ninodezign.com</a>. All Rights Reserved. <br/> MoGo free PSD template by <a href="https://www.behance.net/laaqiq">Laaqiq</a></div>
+        </div>
+    </footer><!--/#footer-->
+
+    <!-- Search Form - Display when click magnify icon in menu
+    ================================================== -->
+    <form action="" id="nino-searchForm">
+    	<input type="text" placeholder="Search..." class="form-control nino-searchInput">
+    	<i class="mdi mdi-close nino-close"></i>
+    </form><!--/#nino-searchForm-->
+	
+    <!-- Scroll to top
+    ================================================== -->
+	<a href="#" id="nino-scrollToTop">Go to Top</a>
+	
+	<!-- javascript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- css3-mediaqueries.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+		
+</body>
+</html>
